@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>A Day In The Life</title>
+	</head>
+	<style>
+	
+		body {
+		font-family: Tahoma;
+		overflow-x: hidden;
+		}
+		
+		.fixed-content {
+		right: 0;
+		left:0;
+		top:0;
+		margin-bottom: 0px;
+		padding: 10px;
+		width:1519.157px;
+		height: 45px;
+		position:fixed;
+		border-style: solid;
+		border-color: #ffbb00;
+		background-color: #ffbb00;
+		border-bottom: solid 5px orange;
+		margin: 0;
+		padding: 5px;
+		font-style: bold;
+		font-size: 13px;
+		}
+		
+		ul {
+		left: 0;
+		top: 0;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #ffbb00;
+		}
+
+		li {
+		float: right;
+		margin-right: 5px;
+		
+		}		
+
+		li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 16px;
+		text-decoration: none;
+		}
+
+		li a:hover {
+		background-color: orange;
+		}
+		
+		.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		}
+		
+		.reminder {
+		border-radius:15px;
+		border: solid #ffbb00 6px;
+		float: right;
+		width: 300px;
+		margin-right: 30px;
+		margin-top: -420px;
+		background-color: lightgray;
+		padding: 5px;
+		top: 10;
+		}
+		
+		.reminder2 {
+		border-radius: 15px;
+		border: solid #ffbb00 6px;
+		float: left;
+		width: 300px;
+		margin: 20px;
+		background-color: lightgray;
+		padding: 5px;
+		top: 10;
+		}
+		
+		.ggbros {
+		border: solid white 0px;
+		width: 700px;
+		margin-left: 401.600px;
+		margin-right: 0px;
+		text-align: justify;
+		}
+		
+		.yellowbg {
+		right: 0;
+		left:0;
+		top:50%;
+		width:1519.157px;
+		height: 50px;
+		border-style: solid;
+		border-color: #ffbb00;
+		background-color: #ffbb00;
+		border-bottom: solid 5px orange;
+		}
+		
+		.yellowbg2 {
+		right: 0;
+		left:0;
+		top:50%;
+		margin-top:-10px;
+		width:1519.157px;
+		height: 100px;
+		border-style: solid;
+		border-color: #ffbb00;
+		background-color: #ffbb00;
+		border-bottom: solid 5px orange;
+		}
+		
+		.p {
+		border: solid 0px white;
+		width: 800px;
+		text-align: justify;
+		}
+		
+		table {
+		border-collapse: collapse;
+		margin: auto;
+		margin-bottom: 100px;
+		}
+		
+		th, td {
+		text-align: left;
+		font-family: Tahoma;
+		}
+		
+		th {
+		padding-bottom: 15px;
+		padding-top: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+		text-align: left;
+		border-bottom: dashed 2px gray;
+		font-size: 24px;
+		}
+		
+		td {
+		font-size: 16px;
+		}
+		
+		td:hover {
+		background: red; color: white;
+		transition: 0.4s;
+		}
+		
+		.hover {
+		background: red; color: white;
+		transition: 0.5s;
+		}
+		
+		th:hover {
+		background: red; color: white;
+		border-color: red;
+		transition: 0.1s;
+		}
+		
+		@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+		{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Poppins', sans-serif;
+		}
+		
+		html,body{
+		height: 100%;
+		width: 100%;
+		background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+		}
+		
+		.wrapper .button{
+		display: inline-block;
+		height: 60px;
+		width: 60px;
+		margin:0px 5px;
+		overflow: hidden;
+		background: #fff;
+		border-radius: 50px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+		}
+
+		.wrapper .button:hover{
+		width: 200px;
+		}
+
+		.wrapper .button .icon{
+		display: inline-block;
+		height: 60px;
+		width: 60px;
+		text-align: center;
+		border-radius: 50px;
+		box-sizing: border-box;
+		line-height: 60px;
+		transition: all 0.3s ease-out;
+		}
+
+		.wrapper .button:nth-child(1):hover .icon{
+		background: #4267B2;
+		}
+
+		.wrapper .button:nth-child(2):hover .icon{
+		background: #1DA1F2;
+		}
+
+		.wrapper .button:nth-child(3):hover .icon{
+		background: #E1306C;
+		}
+
+		.wrapper .button:nth-child(4):hover .icon{
+		background: #333;
+		}
+
+		.wrapper .button:nth-child(5):hover .icon{
+		background: #ff0000;
+		}
+
+		.wrapper .button .icon i{
+		font-size: 25px;
+		line-height: 60px;
+		transition: all 0.3s ease-out;
+		}
+
+		.wrapper .button:hover .icon i{
+		color: #fff;
+		}
+
+		.wrapper .button span{
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 60px;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+		}
+
+		.wrapper .button:nth-child(1) span{
+		color: #4267B2;
+		}
+
+		.wrapper .button:nth-child(2) span{
+		color: #1DA1F2;
+		}
+
+		.wrapper .button:nth-child(3) span{
+		color: #E1306C;
+		}
+
+		.wrapper .button:nth-child(4) span{
+		color: #333;
+		}
+
+		.wrapper .button:nth-child(5) span{
+		color: #ff0000;
+		}
+		
+	</style>
+	<body background="table bg.png">
+		<div class="fixed-content">
+				<ul>
+					<li style="margin-right: 10px; border-left-style: solid; border-left-width: 1px; border-left-color:orange">
+						<a href="A day in the life page.html" style="color: white; text-decoration: none; font-family: Tahoma; font-weight: bold">Games For Dogs</a>
+					</li>
+					<li style="margin-right: 10px; border-left-style: solid; border-left-width: 1px; border-left-color: orange">
+						<a href="Training.html" style="color: white; text-decoration: none; font-family: Tahoma; font-weight: bold">Training</a>
+					</li>
+					<li style="margin-right: 10px; border-left-style: solid; border-left-width: 1px; border-left-color: orange">
+						<a href="Feeding.html" style="color: white; text-decoration: none; font-family: Tahoma; font-weight: bold">Feeding</a>
+					</li>
+					<li style="margin-right: 10px; border-left-style: solid; border-left-width: 1px; border-left-color: orange">
+						<a href="A day in the life page.html" style="color: white; text-decoration: none; font-family: Tahoma; font-weight: bold">A Day In The Life</a>
+					</li>
+					<li style="margin-right: 10px; border-left-style: solid; border-left-width: 1px; border-left-color: orange">
+						<a href="Home Page.html" style="color: white; text-decoration: none; font-family: sans-serif; font-weight: bold">Home</a>
+					<li style="float: left">
+						<img src="webpage image dog final.png" style="position: absolute; top: 0;" width="60px" height="60px">
+					</li>
+					<li style="font-weight: bold; float: left;">
+						<p style="font-family: Trebuchet MS; font-size: 20px; position: absolute; margin-top: 10px; margin-left: 60px">Golden Retrievers</p>
+					</li>	
+				</ul>
+		</div>
+		<img src="webpage image 105.png" style="margin-top: 50px" width="1519.200" height="280.100">
+		<img src="webpage image dog final.png" class="center" width="120px" height="120px" style="margin-bottom: 0px">
+		<h1 style="text-align: center; margin-top: 0px">A Day In The Life With A Golden Retriever</h1>
+		<p style="font-size: 17px"> <br><img src="webpage image 108.jpg" style="float: left; margin-left: 20px; margin-right: 20px;margin-top: 40px" width="500" height="350"><br><div class="ggbros">First thing in the morning, wake up, fix your bed, and go to your dog. For my case, I don't sleep with my dog, she sleeps outside my house because of sanitary reasons. I wake her up as gently as I could. Everytime that I do something to my dog, I first think about how I will react if someone did that to me. For this case, waking up my dog, and obviously you want to wake up as gently as you could, that is the same with dogs. Eveyrtime I wake her up, I'm doing it as gently as possible. Next, I wouldn't feed her right after I wake her up. Again, think first before doing something to your dog. I would first gently pet her so that her energy will slowly build up until she is fully awake, that's the time that I feed her. After I feed her, we will play a little and take her inside our house. In daytime, I have school and maybe you have work and we have to leave them alone in our house. Also, remember that Golden Retrievers are so sociable that they can be left alone for up to 4 hours maximum because they have separation anxiety. You can think of it as a baby you being left alone in your house. That is what dog feel everytime you leave them alone. Everytime you leave, don't forget to say "goodbye" to them because there is a study that dogs can feel what you are feeling right now. Me, I don't only say "goodbye", I also say the time that I am arriving everyday.</div><br><br><div class="yellowbg"> </div><div class="reminder">
+		<p style="font-size: 17px">Golden Retriever puppies are a common favorite for families. They are adorable and friendly as pups and can grow up to be just as happy and loving. The key to turning that cute little ball of fur into the perfect family pet is knowing which breed will best fit into your lifestyle. For a Golden Retriever, this means early and intensive training, a chance for lots of play, and a loving family to curl up with.</div></p><div class="p"><p>After work or school, greet your dog and make them feel that you missed them. In the afternoon, that's the perfect time to yake them for a walk or pay with them because most dogs have their energy peak in the afternoon. Make sure that you and your dog had fun while playing or walking. After that, don't feed them immediately because I'm sure that they are tired from the activities. Maybe pet them first or do chill things for you and for your dog. In nighttime, I feed her and take her outside the house. I do things, sleep, and repeat.</p></div>
+		<img src="webpage image 4.jpg" style="float: right; margin-top: -100px; margin-right: 60px">
+		<div class="p">
+			<p style="font-size: 17px"><div class="reminder2">Golden Retriever puppies are a common favorite for families. They are adorable and friendly as pups and can grow up to be just as happy and loving. The key to turning that cute little ball of fur into the perfect family pet is knowing which breed will best fit into your lifestyle. For a Golden Retriever, this means early and intensive training, a chance for lots of play, and a loving family to curl up with.</div></p><p style="font-size: 17px"> This breed is hardworking, intelligent, friendly and playful, which can all add up to the perfect family dog. There is a very good reason that Golden Retrievers are a popular choice for rescue, therapy, and service dogs.<br><br> This breed is hardworking and intelligent, meaning that they can enjoy their training and retain it very well. Since they are an active breed of dog, they enjoy working as much as they enjoy playing and will often seem to have a wide grin on their faces. These dogs can be a great comfort to victims of tragedy and will often serve as therapy dogs, patiently allowing themselves to be hugged and providing a comforting shoulder to cry on. For families, this can mean that a retriever is the perfect breed to be a friend and companion as well as a pet. If you are looking for a guard dog, then Golden Retriever puppies are not the ones for you. Chances are that this dog breed will lick an intruder to death instead of intimidating them to leave. On the plus side, if you are looking for a friendly dog to play catch with you in the park, then this breed is perfect. Retrievers really live up to their name, as they were bred to help hunters retrieve water fowl, and love to chase anything you throw for them.<br><br>
+			Finding the right dog for your family is about more than just choosing a breed that works well with your lifestyle, but that is the best place to start. If you would like an active breed that loves to play and be cuddled, then you will want to look at various Golden Retriever puppies to find your new best friend.</p>
+		</div>
+		<br><br><br><br>
+		<table background="table bg.png">
+			<tr>
+				<th>Adaptability &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" width="20px" height="20px"><img src="star 1.png" width="20px" height="20px"><img src="star 1.png" width="20px" height="20px"><img src="star 2.png" width="20px" height="20px"><img src="star 2.png" width="20px" height="20px"></th>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Adapt Well To Apartment livings &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"></td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Good For Novice Owners &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"> </td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Sensitivity Level &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"> </td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Tolerates Being Alone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"></td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Tolerates Cold Weather &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"> </td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Tolerates Hot Weather &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"> </td>
+			</tr>	
+		</table>
+		<table background="table bg.png">
+			<tr>
+				<th>All Around Friendliness &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" width="20px" height="20px"><img src="star 1.png" width="20px" height="20px"><img src="star 1.png" width="20px" height="20px"><img src="star 1.png" width="20px" height="20px"><img src="star 1.png" width="20px" height="20px"></th>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Affectionate With Family &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"></td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Kid-Friendly&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"> </td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Dog-Friendly &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"> </td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Friendly Toward Strangers &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"></td>
+			</tr>	
+		</table>
+		<table background="table bg.png">
+			<tr>
+				<th>Health And Grooming Needs &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" width="20px" height="20px"><img src="star 1.png" width="20px" height="20px"><img src="star 1.png" width="20px" height="20px"><img src="star 2.png" width="20px" height="20px"><img src="star 2.png" width="20px" height="20px"></th>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Amount Of Shedding &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"></td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Drooling Potential&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"> </td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Easy To Groom&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"> </td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] General Health&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"></td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Potential For Weight Gain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"> </td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Size &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"> </td>
+			</tr>	
+		</table>
+		<table background="table bg.png">
+			<tr>
+				<th>Trainability &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" width="20px" height="20px"><img src="star 1.png" width="20px" height="20px"><img src="star 1.png" width="20px" height="20px"><img src="star 1.png" width="20px" height="20px"><img src="star 2.png" width="20px" height="20px"></th>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Easy To Train &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"></td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Intelligence&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"> </td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Potential For Mouthiness&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"> </td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Prey Drive&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"></td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Tendency To Bark Or Howl&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"> </td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Wanderlust Potential&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"> </td>
+			</tr>	
+		</table>
+		<table background="table bg.png">
+			<tr>
+				<th>Physical Needs &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" width="20px" height="20px"><img src="star 1.png" width="20px" height="20px"><img src="star 1.png" width="20px" height="20px"><img src="star 1.png" width="20px" height="20px"><img src="star 2.png" width="20px" height="20px"></th>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Energy Level &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src=	"star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"></td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Intensity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"><img src="star 2.png" style="margin: 0" width="20px" height="20px"> </td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Exercise Needs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"> </td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px"> [+] Potential For Playfulness&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"><img src="star 1.png" style="margin: 0" width="20px" height="20px"></td>
+			</tr>	
+		</table>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+		<div class="wrapper">
+         <div class="button">
+            <div class="icon">
+				<a style="color: black" href="https://facebook.com" target="_blank"	>
+					<i class="fab fa-facebook-f"></i>
+				</a>
+            </div>
+            <span>Facebook</span>
+         </div>
+         <div class="button">
+            <div class="icon">
+				<a style="color: black" href="https://twitter.com" target="_blank"	>
+					<i class="fab fa-twitter"></i>
+				</a>
+            </div>
+            <span>Twitter</span>
+         </div>
+         <div class="button">
+            <div class="icon">
+				<a style="color: black" href="https://instagram.com" target="_blank"	>
+					<i class="fab fa-instagram"></i>
+				</a>
+            </div>
+            <span>Instagram</span>
+         </div>
+         <div class="button">
+            <div class="icon">
+				<a style="color: black" href="https://codepen.com" target="_blank"	>
+					<i class="fab fa-codepen"></i>
+				</a>
+            </div>
+            <span>Codepen</span>
+         </div>
+         <div class="button">
+            <div class="icon">
+				<a style="color: black" href="https://youtube.com" target="_blank"	>
+					<i class="fab fa-youtube"></i>
+				</a>
+            </div>
+            <span>YouTube</span>
+         </div>
+		</div>
+		<br>
+		<br>
+		<img src="webpage image 103.webp" width="1524.200" height="420.50">
+		<div class="yellowbg2"> </div>
+		
+	</body>
+</html>
